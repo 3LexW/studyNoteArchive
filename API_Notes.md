@@ -73,4 +73,4 @@ HTTP 作為傳送超媒體文件的協定，是一個瀏覽器和伺服器溝通
 回到剛才 Google Map Geocoding API 的 URL
 ```https://maps.googleapis.com/maps/api/geocode/json?address=Victoria+Peak&key=AIzaSyDQ22zQPHdaM6Z3fpjmYYiL9toYfM8lebM```時，有提到前往 API 的路徑，也就是說傳統的 API 設計是需要為每一種服務寫出一個新的 interface 路徑。
 
-REST API 就是利用了上面提丁的 HTTP 請求方法來輕易解決 API 路徑問題，以達到簡潔化。
+REST API 就是利用了上面提到的 HTTP 請求方法來輕易解決 API 路徑問題，以達到簡潔化。
