@@ -27,7 +27,7 @@
      + 參數2: key
      + 其他參數可以參考 [Google Maps Platform](https://developers.google.com/maps/documentation/geocoding/overview#ReverseGeocoding)
    + ```?latlng=40.714224,-73.961452&key=[你的 API Key]``` - 第二類參數 (經緯度找地址)
-     + 參數1: 經緯度
+     + 參數1: latlng, 經緯度
      + 參數2: key
      + 其他參數可以參考 [Google Maps Platform](https://developers.google.com/maps/documentation/geocoding/overview#geocoding-lookup)
 ## 使用 JavaScript Fetch 來完成 API 的資料取得
@@ -46,7 +46,7 @@ fetch 會傳回包含 Response 的 Promise
 
 那麼我們來查查香港太平山頂 (Victoria Peak)，而最基本的代碼就是
 ```javascript
-    fetch('https://maps.googleapis.com/maps/api/geocode/json?address=Victoria+Peak&key=AIzaSyDQ22zQPHdaM6Z3fpjmYYiL9toYfM8lebM')
+    fetch('https://maps.googleapis.com/maps/api/geocode/json?address=Victoria+Peak&key=[Your Key]')
     //fetch() 傳出 promise 之後，送出 json()
     .then(response => response.json())  
     //json() 傳出 promise 之後，可以獲得所需資料，即經緯度
